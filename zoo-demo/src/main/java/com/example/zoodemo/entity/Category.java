@@ -12,12 +12,10 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-public class Category extends IdClass{
+public class  Category extends IdClass{
     private String categoryType;
-    @OneToMany(mappedBy = "category",
-    cascade = CascadeType.PERSIST)
-    private List<Animal> animals=
-            new ArrayList<>();
+    @OneToMany(mappedBy = "category", cascade = CascadeType.PERSIST)
+    private List<Animal> animals= new ArrayList<>();
 
     public void addAnimal(Animal animal){
         animal.setCategory(this);

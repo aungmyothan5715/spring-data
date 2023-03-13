@@ -8,7 +8,7 @@ public class JPAUtil {
     public static String url = "jdbc:mysql://localhost:3306/bootcamp_4";
     public static String dbdriver = "com.mysql.cj.jdbc.Driver";
     public static String username = "root";
-    public static String password = "kyaw";
+    public static String password = "admin";
     static Statement st;
     static Connection conn;
 

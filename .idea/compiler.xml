@@ -11,27 +11,41 @@
         <module name="zoo-demo" />
         <module name="one-to-many-demo" />
         <module name="demo-datasource" />
-        <module name="demo-connection-jdbc" />
-        <module name="many-to-many" />
         <module name="datasource-standalone" />
         <module name="single-work-unit" />
+        <module name="car-manufacture-and-insurance" />
         <module name="interoperability" />
+        <module name="spring-jpa-collectiontable" />
+        <module name="template-design-pattern" />
+        <module name="jpa-exercises" />
+        <module name="demo-connection-jdbc" />
+        <module name="many-to-many" />
+        <module name="inheritance-demo" />
+        <module name="customer-order-dmeo" />
         <module name="one-to-one-demo" />
         <module name="call-back-in-java" />
-        <module name="template-design-pattern" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customer-order-demo" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="car-manufacture-and-insurance" options="-parameters" />
+      <module name="customer-order-demo" options="-parameters" />
+      <module name="customer-order-dmeo" options="-parameters" />
       <module name="demo-callback-template" options="-parameters" />
       <module name="demo-connection-jdbc" options="-parameters" />
       <module name="demo-datasource" options="-parameters" />
+      <module name="inheritance-demo" options="-parameters" />
       <module name="interoperability" options="-parameters" />
+      <module name="jpa-exercises" options="-parameters" />
       <module name="many-to-many" options="-parameters" />
       <module name="one-to-many-demo" options="-parameters" />
       <module name="one-to-one-demo" options="-parameters" />
       <module name="single-work-unit" options="-parameters" />
+      <module name="spring-jpa-collectiontable" options="-parameters" />
       <module name="zoo-demo" options="-parameters" />
     </option>
   </component>
